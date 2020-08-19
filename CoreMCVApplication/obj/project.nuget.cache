@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cutjqVmf/C6abmmkS54VIp3d/iN5FO96L/W66kMWBiHYZWTZXDu+7A7exvkOVpTrFHpdQd0KUM71Hz3JSxU2yg==",
+  "dgSpecHash": "JzEyKpZCKhTvM2vIcBEhJjjiM6aQnlccMLsO6Ar5wxMMnuyzD/+rwZNOZVFIFtDwS5Jg5mm4LkDm5NlbrRphFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMCVApplication\\CoreMCVApplication.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
