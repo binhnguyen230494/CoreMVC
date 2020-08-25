@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMVC", "CoreMVC\CoreMVC.csproj", "{0B49803C-9493-407D-AAF7-E07D603AE4F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMVC", "CoreMVC\CoreMVC.csproj", "{0B49803C-9493-407D-AAF7-E07D603AE4F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMCVData", "CoreMCVData\CoreMCVData.csproj", "{671E582E-B745-4EDE-A123-DC3D7D970A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMCVData", "CoreMCVData\CoreMCVData.csproj", "{671E582E-B745-4EDE-A123-DC3D7D970A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMCVApplication", "CoreMCVApplication\CoreMCVApplication.csproj", "{3FBAFC61-0F2F-49A5-B0D4-852B8DA24E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMCVApplication", "CoreMCVApplication\CoreMCVApplication.csproj", "{3FBAFC61-0F2F-49A5-B0D4-852B8DA24E27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMVCUtilities", "CoreMVCUtilities\CoreMVCUtilities.csproj", "{BBE65528-155C-4BE7-9554-6D94CAD25C97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMVCViewModels", "CoreMVCViewModels\CoreMVCViewModels.csproj", "{65784AE0-9F99-4092-948D-208B1D9679F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMVCBackendAPI", "CoreMVCBackendAPI\CoreMVCBackendAPI.csproj", "{4FBAF799-1814-4D72-94A1-1E74A9A673FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{3FBAFC61-0F2F-49A5-B0D4-852B8DA24E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FBAFC61-0F2F-49A5-B0D4-852B8DA24E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FBAFC61-0F2F-49A5-B0D4-852B8DA24E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE65528-155C-4BE7-9554-6D94CAD25C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE65528-155C-4BE7-9554-6D94CAD25C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE65528-155C-4BE7-9554-6D94CAD25C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE65528-155C-4BE7-9554-6D94CAD25C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65784AE0-9F99-4092-948D-208B1D9679F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65784AE0-9F99-4092-948D-208B1D9679F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65784AE0-9F99-4092-948D-208B1D9679F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65784AE0-9F99-4092-948D-208B1D9679F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBAF799-1814-4D72-94A1-1E74A9A673FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBAF799-1814-4D72-94A1-1E74A9A673FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBAF799-1814-4D72-94A1-1E74A9A673FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBAF799-1814-4D72-94A1-1E74A9A673FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

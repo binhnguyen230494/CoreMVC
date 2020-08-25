@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreMCVData\CoreMCVData.csproj" />
+    <ProjectReference Include="..\CoreMVCUtilities\CoreMVCUtilities.csproj" />
+    <ProjectReference Include="..\CoreMVCViewModels\CoreMVCViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
 </Project>

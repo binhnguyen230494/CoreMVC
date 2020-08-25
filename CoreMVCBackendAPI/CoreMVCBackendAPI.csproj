@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreMCVApplication\CoreMCVApplication.csproj" />
+    <ProjectReference Include="..\CoreMCVData\CoreMCVData.csproj" />
+    <ProjectReference Include="..\CoreMVCUtilities\CoreMVCUtilities.csproj" />
+    <ProjectReference Include="..\CoreMVCViewModels\CoreMVCViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
