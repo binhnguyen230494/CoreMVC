@@ -1,5 +1,6 @@
 ﻿using CoreMCVData.Configurations;
 using CoreMCVData.Entites;
+using CoreMCVData.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -33,6 +34,7 @@ namespace CoreMCVData.EF
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
             modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
 
+      
             modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims");
             modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new { x.UserId, x.RoleId });
             modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
@@ -41,9 +43,11 @@ namespace CoreMCVData.EF
             modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
 
             //Data seeding
-           // modelBuilder.Seed();
+            modelBuilder.Seed();
+            //base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products { get; set; }
+        
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<AppConfig> AppConfigs { get; set; }

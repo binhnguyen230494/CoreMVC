@@ -2,8 +2,15 @@ C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\C
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMCVApplication.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMCVApplication.pdb
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.csprojAssemblyReference.cache
-C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.csproj.CoreCompileInputs.cache
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.AssemblyInfoInputs.cache
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.AssemblyInfo.cs
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMCVData.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMVCUtilities.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMCVData.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMVCUtilities.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.csproj.CopyComplete
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMVCViewModels.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\bin\Debug\netcoreapp3.1\CoreMVCViewModels.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVApplication\obj\Debug\netcoreapp3.1\CoreMCVApplication.csproj.CoreCompileInputs.cache
