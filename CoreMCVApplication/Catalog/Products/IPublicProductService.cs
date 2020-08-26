@@ -9,7 +9,7 @@ namespace CoreMCVApplication.Catalog.Products
 {
     public interface IPublicProductService
     {
-       Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request);
-       Task<List<ProductViewModel>> GetAll();
+       Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string languageId,GetProductPagingRequest request);
+       
     }
 }

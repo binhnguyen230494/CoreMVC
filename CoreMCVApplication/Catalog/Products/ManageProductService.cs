@@ -27,9 +27,25 @@ namespace CoreMCVApplication.Catalog.Products
             _storageService = storageService;
         }
 
-        public Task<int> AddImages(int productID, List<IFormFile> files)
+        public async Task<int> AddImages(int productID, ProductImageCreateRequest request)
         {
-            throw new NotImplementedException();
+            var productImage = new ProductImage()
+            {
+                Caption = request.Caption,
+                DateCreated = DateTime.Now,
+                IsDefault = request.IsDefault,
+                ProductId = productID,
+                SortOrder = request.SortOrder
+            };
+
+            if (request.ImageFile != null)
+            {
+                productImage.ImagePath = await this.SaveFile(request.ImageFile);
+                productImage.FileSize = request.ImageFile.Length;
+            }
+            _coreMVCDbContext.ProductImages.Add(productImage);
+            await _coreMVCDbContext.SaveChangesAsync();
+            return productImage.Id;
         }
 
         public async Task AddViewcount(int productId)
@@ -139,6 +155,31 @@ namespace CoreMCVApplication.Catalog.Products
             return pagedResult;
         }
 
+        public async Task<ProductViewModel> GetById(int productId, string languageId)
+        {
+            var product = await _coreMVCDbContext.Products.FindAsync(productId);
+            var productTranslation = await _coreMVCDbContext.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
+            && x.LanguageId == languageId);
+
+            var productViewModel = new ProductViewModel()
+            {
+                Id = product.Id,
+                DateCreated = product.DateCreated,
+                Description = productTranslation != null ? productTranslation.Description : null,
+                LanguageId = productTranslation.LanguageId,
+                Details = productTranslation != null ? productTranslation.Details : null,
+                Name = productTranslation != null ? productTranslation.Name : null,
+                OriginalPrice = product.OriginalPrice,
+                Price = product.Price,
+                SeoAlias = productTranslation != null ? productTranslation.SeoAlias : null,
+                SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
+                SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
+                Stock = product.Stock,
+                ViewCount = product.ViewCount
+            };
+            return productViewModel;
+        }
+
         public async Task<ProductImageViewModel> GetImageById(int imageId)
         {
             var image = await _coreMVCDbContext.ProductImages.FindAsync(imageId);
@@ -185,7 +226,7 @@ namespace CoreMCVApplication.Catalog.Products
 
         public async Task<int> Update(ProductUpdateRequest request)
         {
-            var product = _coreMVCDbContext.Products.FindAsync(request.Id);
+            var product = await _coreMVCDbContext.Products.FindAsync(request.Id);
             var productTranslations = await _coreMVCDbContext.ProductTranslations.FirstOrDefaultAsync
                 (x => x.ProductId == request.Id && x.LanguageId == request.LanguageId);
             if (product == null || productTranslations ==null) throw new MVCException($"khong tim thhay:{request.Id}");
@@ -194,6 +235,7 @@ namespace CoreMCVApplication.Catalog.Products
             productTranslations.SeoDescription = request.SeoDescription;
             productTranslations.SeoTitle = request.SeoTitle;
             productTranslations.Details = request.Details;
+            productTranslations.Description = request.Description;
             if (request.ThumbnailImage != null)
             {
                 var thumbnailImage = await _coreMVCDbContext.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.ProductId == request.Id);

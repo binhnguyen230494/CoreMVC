@@ -4,6 +4,6 @@ C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\Co
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\CoreMVCViewModels.AssemblyInfoInputs.cache
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\CoreMVCViewModels.AssemblyInfo.cs
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\bin\Debug\netcoreapp3.1\CoreMVCViewModels.pdb
-C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\CoreMVCViewModels.csproj.CoreCompileInputs.cache
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\CoreMVCViewModels.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\CoreMVCViewModels.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCViewModels\obj\Debug\netcoreapp3.1\CoreMVCViewModels.csproj.CoreCompileInputs.cache

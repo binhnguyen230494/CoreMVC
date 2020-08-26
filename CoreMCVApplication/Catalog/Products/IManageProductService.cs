@@ -15,11 +15,12 @@ namespace CoreMCVApplication.Catalog.Products
         Task<int> Create(ProductCreateRequest request);
         Task<int> Update(ProductUpdateRequest request);
         Task<int> Delete(int productID);
+        Task<ProductViewModel> GetById(int productId, string languageId);
         Task<bool> UpdatePrice(int productId, decimal newPrice);
         Task<bool> UpdateStock(int productId, int addQuantily);
         Task AddViewcount(int productId);
         Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
-        Task<int> AddImages(int productID, List<IFormFile> files);
+        Task<int> AddImages(int productID, ProductImageCreateRequest request);
         Task<int> RemoveImages(int imageId);
         Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request);
         Task<ProductImageViewModel> GetImageById(int imageId);
