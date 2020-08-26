@@ -7,7 +7,7 @@ using System;
 
 namespace CoreMCVData.EF
 {
-    public class CoreMVCDbContext : IdentityDbContext
+    public class CoreMVCDbContext : DbContext
     {
         public CoreMVCDbContext( DbContextOptions options) : base(options)
         {
