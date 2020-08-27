@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "S+q0Be1hRmJ179rjrjSgchSKNEJhi/3Wdj+uaG8rMkgio5pB/J1X1fEaazvlMwJurk7hDAJSj7iPtL2mnDczFA==",
+  "dgSpecHash": "4GJb1WLXftW+qmlVZF/hZvt9HSi7DYCdAQsgM3vHoKi1eV+bIPiZeOe5ZxO29fWCF1gQ4VLu/j3C8yYtllCMFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMVCBackendAPI\\CoreMVCBackendAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rrrrr\\.nuget\\packages\\fluentvalidation\\9.1.3\\fluentvalidation.9.1.3.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.1.3\\fluentvalidation.aspnetcore.9.1.3.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.1.3\\fluentvalidation.dependencyinjectionextensions.9.1.3.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\fluentvalidation\\9.2.0\\fluentvalidation.9.2.0.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.2.0\\fluentvalidation.aspnetcore.9.2.0.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.2.0\\fluentvalidation.dependencyinjectionextensions.9.2.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
