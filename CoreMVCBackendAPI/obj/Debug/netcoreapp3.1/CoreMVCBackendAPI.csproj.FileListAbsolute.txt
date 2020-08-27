@@ -155,6 +155,7 @@ C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\bin\Debug\netcoreapp3.1\zh
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\obj\Debug\netcoreapp3.1\CoreMVCBackendAPI.csproj.CoreCompileInputs.cache
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\obj\Debug\netcoreapp3.1\CoreMVCBackendAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCBackendAPI\obj\Debug\netcoreapp3.1\CoreMVCBackendAPI.MvcApplicationPartsAssemblyInfo.cache

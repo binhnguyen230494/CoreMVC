@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Awz7BYMHAS7mGMGwANNz2XpwEkfLFQv6wFdpZU8znyxvhnRcHexgQFFxrGK4V9arfJI1GtnxyBFrhA0/dYwYVA==",
+  "dgSpecHash": "S+q0Be1hRmJ179rjrjSgchSKNEJhi/3Wdj+uaG8rMkgio5pB/J1X1fEaazvlMwJurk7hDAJSj7iPtL2mnDczFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMVCBackendAPI\\CoreMVCBackendAPI.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.7\\microsoft.aspnetcore.cryptography.internal.3.1.7.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.7\\microsoft.aspnetcore.cryptography.keyderivation.3.1.7.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

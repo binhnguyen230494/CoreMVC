@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CoreMCVApplication.Catalog.Products;
 using CoreMVCViewModels.Catalog.ProductImages;
 using CoreMVCViewModels.Catalog.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,7 @@ namespace CoreMVCBackendAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IPublicProductService _publicProductService;
@@ -125,7 +127,7 @@ namespace CoreMVCBackendAPI.Controllers
             return Ok();
         }
         [HttpGet("{productId}/images/{imageId}")]
-        public async Task<IActionResult> GetImageById(int productId, int imageId)
+        public async Task<IActionResult> GetImageById(int imageId)
         {
             var image = await _manageProductService.GetImageById(imageId);
             if (image == null)
