@@ -1,0 +1,12 @@
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\bin\Debug\netcoreapp3.1\CoreMCVData.deps.json
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\bin\Debug\netcoreapp3.1\CoreMCVData.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.csprojAssemblyReference.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.AssemblyInfoInputs.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.AssemblyInfo.cs
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\bin\Debug\netcoreapp3.1\CoreMCVData.runtimeconfig.json
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\bin\Debug\netcoreapp3.1\CoreMCVData.runtimeconfig.dev.json
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.genruntimeconfig.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.csproj.CoreCompileInputs.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\bin\Debug\netcoreapp3.1\CoreMCVData.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMCVData\obj\Debug\netcoreapp3.1\CoreMCVData.pdb

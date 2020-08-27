@@ -1,7 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreMCVData\CoreMCVData.csproj" />
+    <ProjectReference Include="..\CoreMVCUtilities\CoreMVCUtilities.csproj" />
+    <ProjectReference Include="..\CoreMVCViewModels\CoreMVCViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="System\Languages\" />
+    <Folder Include="System\Roles\" />
+  </ItemGroup>
 
 </Project>

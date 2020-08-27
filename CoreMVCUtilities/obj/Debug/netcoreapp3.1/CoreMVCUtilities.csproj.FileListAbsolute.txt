@@ -1,0 +1,9 @@
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\bin\Debug\netcoreapp3.1\CoreMVCUtilities.deps.json
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\bin\Debug\netcoreapp3.1\CoreMVCUtilities.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\bin\Debug\netcoreapp3.1\CoreMVCUtilities.pdb
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\obj\Debug\netcoreapp3.1\CoreMVCUtilities.csprojAssemblyReference.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\obj\Debug\netcoreapp3.1\CoreMVCUtilities.AssemblyInfoInputs.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\obj\Debug\netcoreapp3.1\CoreMVCUtilities.AssemblyInfo.cs
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\obj\Debug\netcoreapp3.1\CoreMVCUtilities.csproj.CoreCompileInputs.cache
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\obj\Debug\netcoreapp3.1\CoreMVCUtilities.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCUtilities\obj\Debug\netcoreapp3.1\CoreMVCUtilities.pdb
