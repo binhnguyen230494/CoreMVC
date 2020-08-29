@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CoreMCVApplication.Catalog.Products
 {
-    public interface IManageProductService
+    public interface IProductService
     {
         Task<int> Create(ProductCreateRequest request);
         Task<int> Update(ProductUpdateRequest request);
@@ -26,6 +26,9 @@ namespace CoreMCVApplication.Catalog.Products
         Task<ProductImageViewModel> GetImageById(int imageId);
 
         Task<List<ProductImageViewModel>> GetListImages(int productId);
+        
+
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request);
 
 
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CoreMVCViewModels.Catalog.Products
 {
-    public class GetProductPagingRequest : PagingRequestBase
+    public class GetPublicProductPagingRequest : PagingRequestBase
     { 
         public int? CategoryId { get; set; }
     }

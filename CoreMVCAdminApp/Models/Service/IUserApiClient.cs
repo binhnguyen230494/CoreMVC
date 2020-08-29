@@ -1,4 +1,5 @@
-﻿using CoreMVCViewModels.System.Users;
+﻿using CoreMVCViewModels.Common;
+using CoreMVCViewModels.System.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace CoreMVCAdminApp.Models.Service
     public interface IUserApiClient
     {
         Task<string> Authenticate(LoginRequest request);
+        Task<PagedResult<UserVm>> GetUsersPagings(GetUserPagingRequest request);
     }
 }
