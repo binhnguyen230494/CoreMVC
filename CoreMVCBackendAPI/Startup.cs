@@ -42,10 +42,7 @@ namespace CoreMVCBackendAPI
             services.AddIdentity<AppUser, AppRole>()
                .AddEntityFrameworkStores<CoreMVCDbContext>()
                .AddDefaultTokenProviders();
-
-
-            services.AddTransient<IPublicProductService, PublicProductService>();
-            services.AddTransient<IManageProductService, ManageProductService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IStorageService, FileStorageService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
