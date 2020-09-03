@@ -149,7 +149,9 @@ namespace CoreMCVApplication.Catalog.Products
                 }).ToListAsync();
             var pagedResult =  new PagedResult<ProductViewModel>()
             {
-                TotalRecord = totalRow,
+                TotalRecords = totalRow,
+                PageIndex =request.PageIndex,
+                PageSize =request.PageSize,
                 Items = data
             };
             return pagedResult;
@@ -325,7 +327,7 @@ namespace CoreMCVApplication.Catalog.Products
                 }).ToListAsync();
             var pagedResult = new PagedResult<ProductViewModel>()
             {
-                TotalRecord = totalRow,
+                TotalRecords = totalRow,
                 Items = data
             };
             return pagedResult;

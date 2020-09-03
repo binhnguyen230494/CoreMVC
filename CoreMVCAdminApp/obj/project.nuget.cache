@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XVXmxi5m30J+s48IiKfIYhFM86PZGvqV8VU6YVO/LyIRQXd6dHz6c72oWaYl+JbVX7Sb9RMfOdCE+joQXV87qA==",
+  "dgSpecHash": "UShAWxoHzyciUfisjXM2XsL1dfARQ+GN60Jekpw8hmw1lu5LKy7U+v79Cyolm41wF7ioET9J7CpHf+37S51e8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMVCAdminApp\\CoreMVCAdminApp.csproj",
   "expectedPackageFiles": [
@@ -43,10 +43,14 @@
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.4\\microsoft.visualstudio.web.codegeneration.3.1.4.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.4\\microsoft.visualstudio.web.codegeneration.contracts.3.1.4.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.4\\microsoft.visualstudio.web.codegeneration.core.3.1.4.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\3.1.4\\microsoft.visualstudio.web.codegeneration.design.3.1.4.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.entityframeworkcore\\3.1.4\\microsoft.visualstudio.web.codegeneration.entityframeworkcore.3.1.4.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\3.1.4\\microsoft.visualstudio.web.codegeneration.templating.3.1.4.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\3.1.4\\microsoft.visualstudio.web.codegeneration.utils.3.1.4.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\3.1.4\\microsoft.visualstudio.web.codegenerators.mvc.3.1.4.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
@@ -141,8 +145,7 @@
     "C:\\Users\\rrrrr\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

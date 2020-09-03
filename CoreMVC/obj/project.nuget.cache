@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jHFoPwT2qBck+7ZAQw6EyUpyQd0RJgbteyLVRgobP56dHV5Fkmy5IgSFycIWJCJafb9BfCENSHa9Fg3x+wCRkA==",
+  "dgSpecHash": "eDVU3os0l+1n7LrJsRlEiiot9J10QkueqPjP+hlN2e7GDl+4/Ku5vqZeVnn5VlVniJrDKbGgbb+NL4ZW1+UZLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMVC\\CoreMVC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
   ],
   "logs": []
 }

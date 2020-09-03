@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CoreMVCAdminApp.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using CoreMVCUtilities.Constants;
 
 namespace CoreMVCAdminApp.Controllers
 {
@@ -35,6 +37,12 @@ namespace CoreMVCAdminApp.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public IActionResult Language(NavigationViewModel viewModel)
+        {
+            HttpContext.Session.SetString(SystemConstants.AppSettings.DefaultLanguageId,
+                viewModel.CurrentLanguageId);
+            return RedirectToAction("Index");
         }
     }
 }

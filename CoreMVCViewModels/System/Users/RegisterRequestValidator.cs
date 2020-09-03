@@ -19,7 +19,7 @@ namespace CoreMVCViewModels.System.Users
             RuleFor(x => x.Email).NotEmpty().WithMessage("Email is required")
                 .Matches(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")
                 .WithMessage("Email format not match");
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Pasword í required")
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Pasword is required")
                 .MinimumLength(6).WithMessage("Password is at least 6 charaters");
             RuleFor(x => x).Custom((request, context) =>
             {

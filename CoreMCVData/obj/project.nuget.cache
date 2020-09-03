@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BQnOTdqeARCzV0Sy8aLg3AShPW0Eh8lEUfTgYxuYteC/r+sxRjbuaQ22gxHdnK0c7QaVnNUfJraZXYv3OaeJ4w==",
+  "dgSpecHash": "TTj8/mAHAspRO8Jy6D6pl9SeF0ypxUZybCWJD+gnYRK5XfX6Q38nkKNjTjW5MLvvIlHimhTfa2MjM6AWDbIwNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMCVData\\CoreMCVData.csproj",
   "expectedPackageFiles": [
@@ -103,8 +103,7 @@
     "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\rrrrr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

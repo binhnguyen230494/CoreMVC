@@ -11,10 +11,12 @@
     <PackageReference Include="Microsoft.IdentityModel.Logging" Version="6.7.1" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Core" Version="3.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CoreMVCUtilities\CoreMVCUtilities.csproj" />
     <ProjectReference Include="..\CoreMVCViewModels\CoreMVCViewModels.csproj" />
   </ItemGroup>
 
