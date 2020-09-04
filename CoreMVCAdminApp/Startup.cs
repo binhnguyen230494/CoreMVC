@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using CoreMVCAdminApp.Models.Service;
 using CoreMVCViewModels.System.Users;
 using FluentValidation.AspNetCore;
@@ -41,8 +38,10 @@ namespace CoreMVCAdminApp
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
             });
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<IProductApiClient, ProductApiClient>();
             services.AddTransient<ILanguageApiClient, LanguageApiClient>();
-            services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+            
             services.AddTransient<IUserApiClient, UserApiClient>();
             services.AddTransient<IRoleApiClient, RoleApiClient>();
             IMvcBuilder builder = services.AddRazorPages();

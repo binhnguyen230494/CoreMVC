@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{4D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Host", "3.Host", "{36F01450-6F1E-4FCA-92A1-B8D0E3CF56DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreMVCAdminApp", "CoreMVCAdminApp\CoreMVCAdminApp.csproj", "{3371FC00-61BB-45B0-AB9D-143ABD9828E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreMVCAdminApp", "CoreMVCAdminApp\CoreMVCAdminApp.csproj", "{3371FC00-61BB-45B0-AB9D-143ABD9828E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

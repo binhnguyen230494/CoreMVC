@@ -1,7 +1,5 @@
-using System;
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using CoreMCVApplication.Catalog.Products;
 using CoreMCVApplication.Common;
 using CoreMCVApplication.System.Languages;
@@ -15,9 +13,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.CodeAnalysis.Host;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -45,11 +41,12 @@ namespace CoreMVCBackendAPI
             services.AddIdentity<AppUser, AppRole>()
                .AddEntityFrameworkStores<CoreMVCDbContext>()
                .AddDefaultTokenProviders();
-            services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IStorageService, FileStorageService>();
+            services.AddTransient<IProductService, ProductService>();
+            
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
-            services.AddTransient<CoreMCVApplication.System.Languages.ILanguageService, LanguageService>();
+            services.AddTransient<ILanguageService,LanguageService>();
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();

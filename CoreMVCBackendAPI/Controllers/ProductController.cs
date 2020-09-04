@@ -17,14 +17,14 @@ namespace CoreMVCBackendAPI.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _ProductService;
-        public ProductController(IProductService ProductService, IProductService productService = null)
+        public ProductController(IProductService ProductService)
         {
-            _ProductService = productService;
+            _ProductService = ProductService;
         }
-        [HttpGet("{languageId}")]
-        public async Task<IActionResult> GetAllPaging(string languageId,[FromQuery] GetPublicProductPagingRequest request)
+        [HttpGet("paging")]
+        public async Task<IActionResult> GetAllPaging([FromQuery]GetManageProductPagingRequest request)
         {
-            var products = await _ProductService.GetAllByCategoryId(languageId,request);
+            var products = await _ProductService.GetAllPaging(request);
             return Ok(products);
         }
         //http://localhost:port/product/1
@@ -131,12 +131,6 @@ namespace CoreMVCBackendAPI.Controllers
             if (image == null)
                 return BadRequest("Cannot find product");
             return Ok(image);
-        }
-
-        public override bool Equals(object obj)
-        {
-            return obj is ProductController controller &&
-                   EqualityComparer<IProductService>.Default.Equals(_ProductService, controller._ProductService);
         }
     }
 }
