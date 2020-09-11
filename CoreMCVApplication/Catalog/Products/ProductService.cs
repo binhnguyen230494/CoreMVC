@@ -99,20 +99,24 @@ namespace CoreMCVApplication.Catalog.Products
             return product.Id;
         }
 
-        public async Task<int> Delete(int productID)
+        public async Task<ApiResult<int>> Delete(int productId)
         {
-            var product = await _coreMVCDbContext.Products.FindAsync(productID);
-            if (product == null) throw new MVCException($"Cannot find a product: {productID}");
+            var product = await _coreMVCDbContext.Products.FindAsync(productId);
+            if (product == null) throw new MVCException($"Cannot find a product: {productId}");
 
-            var images = _coreMVCDbContext.ProductImages.Where(i => i.ProductId == productID);
+            var images = _coreMVCDbContext.ProductImages.Where(i => i.ProductId == productId);
             foreach (var image in images)
             {
                 await _storageService.DeleteFileAsync(image.ImagePath);
             }
 
-            _coreMVCDbContext.Products.Remove(product);
+             _coreMVCDbContext.Products.Remove(product);
 
-            return await _coreMVCDbContext.SaveChangesAsync();
+            var result = await _coreMVCDbContext.SaveChangesAsync();
+            if (result > 0)
+                return new ApiSuccessResult<int>();
+            return new ApiErrorResult<int>("Xoa Khong thanh cong");
+
         }
 
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
@@ -120,17 +124,19 @@ namespace CoreMCVApplication.Catalog.Products
             //1. Select join
             var query = from p in _coreMVCDbContext.Products
                         join pt in _coreMVCDbContext.ProductTranslations on p.Id equals pt.ProductId
-                        join pic in _coreMVCDbContext.ProductInCategories on p.Id equals pic.ProductId
-                        join c in _coreMVCDbContext.Categories on pic.CategoryId equals c.Id
+                        join pic in _coreMVCDbContext.ProductInCategories on p.Id equals pic.ProductId into ppic
+                        from pic in ppic.DefaultIfEmpty()
+                        join c in _coreMVCDbContext.Categories on pic.CategoryId equals c.Id into picc
+                        from c in picc.DefaultIfEmpty()
                         where pt.LanguageId == request.LanguageId
                         select new { p, pt, pic };
             //2. filter
             if (!string.IsNullOrEmpty(request.Keyword))
                 query = query.Where(x => x.pt.Name.Contains(request.Keyword));
 
-            if (request.CategoryIds != null && request.CategoryIds.Count > 0)
+            if (request.CategoryId != null && request.CategoryId != 0)
             {
-                query = query.Where(p => request.CategoryIds.Contains(p.pic.CategoryId));
+                query = query.Where(p => p.pic.CategoryId == request.CategoryId);
             }
 
             //3. Paging
@@ -171,6 +177,11 @@ namespace CoreMCVApplication.Catalog.Products
             var product = await _coreMVCDbContext.Products.FindAsync(productId);
             var productTranslation = await _coreMVCDbContext.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
             && x.LanguageId == languageId);
+            var categories = await (from c in _coreMVCDbContext.Categories
+                                    join ct in _coreMVCDbContext.CategoryTranslations on c.Id equals ct.CategoryId
+                                    join pic in _coreMVCDbContext.ProductInCategories on c.Id equals pic.CategoryId
+                                    where pic.ProductId == productId && ct.LanguageId == languageId
+                                    select ct.Name).ToListAsync();
 
             var productViewModel = new ProductVm()
             {
@@ -186,7 +197,8 @@ namespace CoreMCVApplication.Catalog.Products
                 SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
                 SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
                 Stock = product.Stock,
-                ViewCount = product.ViewCount
+                ViewCount = product.ViewCount,
+                Categories = categories
             };
             return productViewModel;
         }
@@ -240,7 +252,7 @@ namespace CoreMCVApplication.Catalog.Products
             var product = await _coreMVCDbContext.Products.FindAsync(request.Id);
             var productTranslations = await _coreMVCDbContext.ProductTranslations.FirstOrDefaultAsync
                 (x => x.ProductId == request.Id && x.LanguageId == request.LanguageId);
-            if (product == null || productTranslations ==null) throw new MVCException($"khong tim thhay:{request.Id}");
+            if (product == null || productTranslations == null) throw new MVCException($"khong tim thhay:{request.Id}");
             productTranslations.Name = request.Name;
             productTranslations.SeoAlias = request.SeoAlias;
             productTranslations.SeoDescription = request.SeoDescription;
@@ -282,7 +294,7 @@ namespace CoreMCVApplication.Catalog.Products
             if (product == null) throw new MVCException($"Khong tim thay: {productId}");
             product.Price = newPrice;
             return await _coreMVCDbContext.SaveChangesAsync() > 0;
-            
+
 
         }
 
@@ -342,6 +354,34 @@ namespace CoreMCVApplication.Catalog.Products
                 Items = data
             };
             return pagedResult;
+        }
+        public async Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request)
+        {
+            var user = await _coreMVCDbContext.Products.FindAsync(id);
+            if (user == null)
+            {
+                return new ApiErrorResult<bool>($"Sản phẩm với id {id} không tồn tại");
+            }
+            foreach (var category in request.Categories)
+            {
+                var productInCategory = await _coreMVCDbContext.ProductInCategories
+                    .FirstOrDefaultAsync(x => x.CategoryId == int.Parse(category.Id)
+                    && x.ProductId == id);
+                if (productInCategory != null && category.Selected == false)
+                {
+                    _coreMVCDbContext.ProductInCategories.Remove(productInCategory);
+                }
+                else if (productInCategory == null && category.Selected)
+                {
+                    await _coreMVCDbContext.ProductInCategories.AddAsync(new ProductInCategory()
+                    {
+                        CategoryId = int.Parse(category.Id),
+                        ProductId = id
+                    });
+                }
+            }
+            await _coreMVCDbContext.SaveChangesAsync();
+            return new ApiSuccessResult<bool>();
         }
     }
 }

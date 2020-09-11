@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using CoreMCVApplication.Catalog.Categories;
 using CoreMCVApplication.Catalog.Products;
 using CoreMCVApplication.Common;
 using CoreMCVApplication.System.Languages;
@@ -43,7 +44,7 @@ namespace CoreMVCBackendAPI
                .AddDefaultTokenProviders();
             services.AddTransient<IStorageService, FileStorageService>();
             services.AddTransient<IProductService, ProductService>();
-            
+            services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<ILanguageService,LanguageService>();

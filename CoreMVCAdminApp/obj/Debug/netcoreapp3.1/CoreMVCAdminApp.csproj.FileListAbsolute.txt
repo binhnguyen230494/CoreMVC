@@ -415,3 +415,6 @@ C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\bin\Debug\netcoreapp3.1\refs
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\bin\Debug\netcoreapp3.1\refs\System.Collections.Immutable.dll
 C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.DiagnosticSource.dll
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\CategoryAssign.cshtml.g.cs
+C:\Users\rrrrr\source\repos\CoreMVC\CoreMVCAdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Delete.cshtml.g.cs

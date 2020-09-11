@@ -37,6 +37,7 @@ namespace CoreMVCBackendAPI.Controllers
             return Ok(product);
         }
         [HttpPost]
+        [Consumes("multipart/form-data")]
         public async Task<IActionResult> Create([FromForm]ProductCreateRequest request)
         {
             if(!ModelState.IsValid)
@@ -62,14 +63,12 @@ namespace CoreMVCBackendAPI.Controllers
 
             return Ok();
         }
-        [HttpDelete("productId")]
+        [HttpDelete("{productId}")]
         public async Task<IActionResult> Delete(int productId)
         {
             var affectedResult = await _ProductService.Delete(productId);
-            if (affectedResult == 0)
-                return BadRequest();
 
-            return Ok();
+            return Ok(affectedResult);
         }
         [HttpPatch("{productId}/{newPrice}")]
         public async Task<IActionResult> UpdatePrice(int productId,decimal newPrice)
@@ -131,6 +130,19 @@ namespace CoreMVCBackendAPI.Controllers
             if (image == null)
                 return BadRequest("Cannot find product");
             return Ok(image);
+        }
+        [HttpPut("{id}/categories")]
+        public async Task<IActionResult> CategoryAssign(int id, [FromBody] CategoryAssignRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _ProductService.CategoryAssign(id, request);
+            if (!result.IsSuccessed)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
         }
     }
 }

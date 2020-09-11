@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eDVU3os0l+1n7LrJsRlEiiot9J10QkueqPjP+hlN2e7GDl+4/Ku5vqZeVnn5VlVniJrDKbGgbb+NL4ZW1+UZLA==",
+  "dgSpecHash": "zP/pqd1gT8hB/D1vKreBSxIvlBGFH9W6lhI8CS8BKSolTN6Pxxg1JulWBw8L9RCMmQPJ1fQnX4piQabW5xQ5qg==",
   "success": true,
   "projectFilePath": "C:\\Users\\rrrrr\\source\\repos\\CoreMVC\\CoreMVC\\CoreMVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rrrrr\\.nuget\\packages\\lazziya.expresslocalization\\4.0.2\\lazziya.expresslocalization.4.0.2.nupkg.sha512",
+    "C:\\Users\\rrrrr\\.nuget\\packages\\lazziya.taghelpers\\4.0.1\\lazziya.taghelpers.4.0.1.nupkg.sha512",
     "C:\\Users\\rrrrr\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
   ],
   "logs": []

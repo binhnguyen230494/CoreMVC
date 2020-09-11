@@ -14,7 +14,7 @@ namespace CoreMCVApplication.Catalog.Products
     {
         Task<int> Create(ProductCreateRequest request);
         Task<int> Update(ProductUpdateRequest request);
-        Task<int> Delete(int productID);
+        Task<ApiResult<int>> Delete(int productID);
         Task<ProductVm> GetById(int productId, string languageId);
         Task<bool> UpdatePrice(int productId, decimal newPrice);
         Task<bool> UpdateStock(int productId, int addQuantily);
@@ -26,11 +26,9 @@ namespace CoreMCVApplication.Catalog.Products
         Task<ProductImageViewModel> GetImageById(int imageId);
 
         Task<List<ProductImageViewModel>> GetListImages(int productId);
-        
 
+        Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request);
         Task<PagedResult<ProductVm>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request);
-
-
-
+        
     }
 }

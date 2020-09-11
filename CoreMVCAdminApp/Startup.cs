@@ -41,7 +41,7 @@ namespace CoreMVCAdminApp
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IProductApiClient, ProductApiClient>();
             services.AddTransient<ILanguageApiClient, LanguageApiClient>();
-            
+            services.AddTransient<ICategoryApiClient, CategoryApiClient>();
             services.AddTransient<IUserApiClient, UserApiClient>();
             services.AddTransient<IRoleApiClient, RoleApiClient>();
             IMvcBuilder builder = services.AddRazorPages();
